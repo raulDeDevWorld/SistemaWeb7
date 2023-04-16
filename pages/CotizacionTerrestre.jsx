@@ -22,6 +22,8 @@ function CotizacionTerrestre() {
     const [tarifa, setTarifa] = useState([""])
     const [otrosGastos, setOtrosGastos] = useState([""])
     const [incluye, setIncluye] = useState([""])
+    const [filter, setFilter] = useState("")
+    const [autocomplete, setAutocomplete] = useState(false)
 
     const [calc, setCalc] = useState({})
 
@@ -124,11 +126,24 @@ function CotizacionTerrestre() {
 
 
 
+
+function handleFilterChange (e) {
+        setFilter(e.target.value)
+}
+
+function handlerFilterButton () {
+         setAutocomplete(true)
+}
+
 console.log(userDB)
     return (
         <Layout>
             {userDB && <div className={style.container}>
                 <form className={style.form}>
+
+<input  className={style.inputFilter} type="text" onChange={handleFilterChange} />
+<button className={style.buttonFilter} onClick={handlerFilterButton}>Completar</button>
+
                     <div className={style.subtitle}>COTIZACIÓN TRANSPORTE TERRESTRE</div>
                     <div className={style.containerFirstItems}>
                         <div className={style.imgForm}>
