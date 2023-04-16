@@ -130,7 +130,7 @@ function Users() {
                             if (userDB.users[item].correo.includes(filter) && user.uid !== item) {
                                 return <div className={style.items} key={i}>
                                     <Link href="#" >
-                                        <a className={style.link}>{userDB.users[item].correo}</a>
+                                        <a className={style.link}>{userDB.users[item].nombre}</a>
                                     </Link>
                                     <div className={style.items}>
                                         <span className={style.rol}>{userDB.users[item].telefono}</span>
