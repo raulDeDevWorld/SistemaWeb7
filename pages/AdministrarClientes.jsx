@@ -165,7 +165,7 @@ function saveUpdate(e) {
 
                     {userDB && userDB.users && <ul className={style.list}>
                         {Object.keys(userDB.users).map((item, i) => {
-                            if (userDB.users[item].correo.includes(filter) && user.uid !== item) {
+                            if (userDB.users[item].ci.includes(filter) && user.uid !== item) {
                                 return <div className={style.items} key={i}>
                                     <Link href="#" >
                                         <a className={style.link}>{userDB.users[item].nombre}</a>
