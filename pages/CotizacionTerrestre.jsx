@@ -132,8 +132,8 @@ function handleFilterChange (e) {
         setFilter(e.target.value)
 }
 
-function handlerFilterButton () {
-       
+function handlerFilterButton (e) {
+       e.preventDefault()
         let obj = {
             nombre: '',
             correo: '',
