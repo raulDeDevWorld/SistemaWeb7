@@ -163,7 +163,7 @@ function Users() {
 
                 </main>}
                 {itemSelect !== '' && mode == 'remove' && <Modal mode={mode} click={x} confirm={removeConfirm} text={`Estas por eliminar a: ${userDB.users[itemSelect].correo}`}></Modal>}
-                {itemSelect !== '' && mode == 'edit' && 
+                {viewForm && itemSelect !== '' && mode == 'edit' && 
                 
                 <div className={style.formContainer}>
 
