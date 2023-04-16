@@ -67,6 +67,7 @@ function Users() {
     function editConfirm() {
         writeUserData(`users/${itemSelect}/`, { rol, }, setUserSuccess)
         getData(`/`, setUserData)
+setViewForm(true)
     }
 
     function x() {
