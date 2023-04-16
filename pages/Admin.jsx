@@ -31,7 +31,7 @@ function Admin() {
                     <Card img="/airplane.svg" buttonText={"Cotizacion Aerea"} click={(e) => redirection("CotizacionAerea")} />
                     <Card img="/agreement.svg" buttonText={"Manifiesto De Carga"} click={(e) => redirection("ManifiestoDeCarga")} />
                 </div>
-            </div>
+            </div>      
         </Layout>
 
     )
