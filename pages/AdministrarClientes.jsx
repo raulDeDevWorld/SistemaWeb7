@@ -117,6 +117,33 @@ if ( pdfData['AD-NOMBRE'] &&
 setUserSuccess('Complete')
 }
 }
+
+
+
+function saveUpdate(e) {
+        e.preventDefault()
+
+
+        let obj = {
+            nombre: pdfData['AD-NOMBRE'] ? pdfData['AD-NOMBRE'] : itemSelect['nombre'],
+            correo: pdfData['AD-CORREO'] ? pdfData['AD-CORREO'] : itemSelect['correo'],
+            empresa: pdfData['AD-EMPRESA'] ? pdfData['AD-EMPRESA'] : itemSelect['empresa'],
+            telefono: pdfData['AD-TELEFONO'] ? pdfData['AD-TELEFONO'] : itemSelect['telefono'],
+            cargo: pdfData['AD-CARGO'] ? pdfData['AD-CARGO'] : itemSelect['cargo'],
+            ciudad: pdfData['AD-CIUDAD'] ? pdfData['AD-CIUDAD'] : itemSelect['ciudad'],
+            ci: pdfData['AD-DNI'] ? pdfData['AD-DNI'] : itemSelect['ci']
+
+        }
+
+        let rute = obj.ci
+
+
+        writeUserData(`users/${rute}/`, obj, setUserSuccess)
+}
+
+
+
+
     useEffect(() => {
         userDB && userDB.users[user.uid] && userDB.users[user.uid].rol !== 'Admin' && router.push('/Formularios')
     }, [userDB, success])
@@ -178,7 +205,7 @@ setUserSuccess('Complete')
                 
                 <div className={style.formContainer}>
 
-                <form className={style.form} onSubmit={save}>
+                <form className={style.form} onSubmit={saveUpdate}>
                     <span onClick={handlerForm} className={style.x}>X</span>
                     <div className={style.subtitle}>DATOS DE CLIENTE</div>
                     <br />
