@@ -186,7 +186,7 @@ console.log(itemSelect)
                     <div className={style.items}>
                         <div>
                             <label htmlFor="">NOMBRE</label>
-                            <input type="text" name={"NOMBRE"} onChange={handleEventChange} />
+                            <input type="text" name={"NOMBRE"} onChange={handleEventChange} defaultValue={itemSelect['nombre'] ? itemSelect[nombre]:''} />
                         </div>
                         <div>
                             <label htmlFor="">CORREO</label>
