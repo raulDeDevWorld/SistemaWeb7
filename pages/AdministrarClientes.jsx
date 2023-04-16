@@ -60,6 +60,7 @@ function Users() {
         setRol(userDB.users[item].rol)
         setMode('edit')
         setItemSelect(userDB.users[item])
+setViewForm(true)
     }
     function editRol(data) {
         setRol(data)
@@ -67,7 +68,7 @@ function Users() {
     function editConfirm() {
         writeUserData(`users/${itemSelect}/`, { rol, }, setUserSuccess)
         getData(`/`, setUserData)
-setViewForm(true)
+setViewForm(false)
     }
 
     function x() {
