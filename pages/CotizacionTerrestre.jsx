@@ -133,10 +133,25 @@ function handleFilterChange (e) {
 }
 
 function handlerFilterButton () {
+       
+        let obj = {
+            nombre: '',
+            correo: '',
+            empresa: '',
+            telefono: '',
+            cargo: '',
+            ciudad: '',
+            ci: ''
+
+        }
+         let f = userDB.users[filter] ? userDB.users[filter] : obj
+
+         setItemSelect(f)
+
          setAutocomplete(true)
 }
 
-console.log(userDB)
+console.log(itemSelect)
     return (
         <Layout>
             {userDB && <div className={style.container}>
