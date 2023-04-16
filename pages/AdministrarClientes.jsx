@@ -131,7 +131,7 @@ function saveUpdate(e) {
             telefono: pdfData['AD-TELEFONO'] ? pdfData['AD-TELEFONO'] : itemSelect['telefono'],
             cargo: pdfData['AD-CARGO'] ? pdfData['AD-CARGO'] : itemSelect['cargo'],
             ciudad: pdfData['AD-CIUDAD'] ? pdfData['AD-CIUDAD'] : itemSelect['ciudad'],
-            ci: pdfData['AD-DNI'] ? pdfData['AD-DNI'] : itemSelect['ci']
+            ci: itemSelect['ci']
 
         }
 
@@ -161,7 +161,7 @@ function saveUpdate(e) {
                     <div className={style.containerIMG}>
                         <Image src="/logo.svg" width="350" height="250" alt="User" />
                     </div>
-                    <input className={style.filter} onChange={handlerOnChange} placeholder='Buscar Por Email' />
+                    <input className={style.filter} onChange={handlerOnChange} placeholder='Buscar Por CI' />
 
                     {userDB && userDB.users && <ul className={style.list}>
                         {Object.keys(userDB.users).map((item, i) => {
