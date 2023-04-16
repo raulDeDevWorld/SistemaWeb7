@@ -166,11 +166,11 @@ function saveUpdate(e) {
                     {userDB && userDB.users && <ul className={style.list}>
                         {Object.keys(userDB.users).map((item, i) => {
                             if (userDB.users[item].ci.includes(filter) && user.uid !== item) {
-                                return <div className={style.items} key={i}>
+                                return <div className={style.itemsAdmin} key={i}>
                                     <Link href="#" >
                                         <a className={style.link}>{userDB.users[item].nombre}</a>
                                     </Link>
-                                    <div className={style.items}>
+                                    <div className={style.itemsAdmin}>
                                         <span className={style.rol}>{userDB.users[item].ci}</span>
 
                                         <Image src="/Edit.svg" width="25" height="25" alt="User" onClick={() => edit(item)} />
@@ -180,11 +180,11 @@ function saveUpdate(e) {
                             }
 
                             if (filter == '' && user.uid !== item) {
-                                return <div className={style.items} key={i}>
+                                return <div className={style.itemsAdmin} key={i}>
                                     <Link href="validator/[User]" as={`validator/${item}`} >
                                         <a className={style.link}>{userDB.users[item].email}</a>
                                     </Link>
-                                    <div className={style.items}>
+                                    <div className={style.itemsAdmin}>
                                         <span className={style.rol}>{userDB.users[item].rol}</span>
                                         <Image src="/Edit.svg" width="25" height="25" alt="User" onClick={() => edit(item)} />
                                         <Image src="/Delete.svg" width="25" height="25" alt="User" onClick={() => remove(item)} />
