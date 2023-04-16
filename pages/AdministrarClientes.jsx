@@ -201,7 +201,7 @@ setViewForm(false)
                         </div>
                         <div>
                             <label htmlFor="">CI</label>
-                            <input type="text" name={"DNI"} onChange={handleEventChange} defaultValue={itemSelect['ci']}/>
+                            <input type="text" name={"DNI"} onChange={handleEventChange} value={itemSelect['ci']}/>
                         </div>
 
                     </div>
