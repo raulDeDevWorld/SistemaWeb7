@@ -133,7 +133,7 @@ function Users() {
                                         <a className={style.link}>{userDB.users[item].nombre}</a>
                                     </Link>
                                     <div className={style.items}>
-                                        <span className={style.rol}>{userDB.users[item].telefono}</span>
+                                        <span className={style.rol}>{userDB.users[item].ci}</span>
 
                                         <Image src="/Edit.svg" width="25" height="25" alt="User" onClick={() => edit(item)} />
                                         <Image src="/Delete.svg" width="25" height="25" alt="User" onClick={() => remove(item)} />
