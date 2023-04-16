@@ -24,6 +24,7 @@ function CotizacionTerrestre() {
     const [incluye, setIncluye] = useState([""])
     const [filter, setFilter] = useState("")
     const [autocomplete, setAutocomplete] = useState(false)
+    const [itemSelect, setItemSelect] = useState({})
 
     const [calc, setCalc] = useState({})
 
