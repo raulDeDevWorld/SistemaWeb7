@@ -90,8 +90,14 @@ setViewForm(false)
     function save(e) {
         e.preventDefault()
 
-
-
+if ( pdfData['AD-NOMBRE'] &&
+ pdfData['AD-CORREO'] &&
+ pdfData['AD-EMPRESA'] &&
+ pdfData['AD-TELEFONO'] &&
+ pdfData['AD-CARGO'] &&
+ pdfData['AD-CIUDAD'] &&
+ pdfData['AD-DNI'] )
+{
         let obj = {
             nombre: pdfData['AD-NOMBRE'] ? pdfData['AD-NOMBRE'] : null,
             correo: pdfData['AD-CORREO'] ? pdfData['AD-CORREO'] : null,
@@ -107,7 +113,10 @@ setViewForm(false)
 
 
         writeUserData(`users/${rute}/`, obj, setUserSuccess)
-    }
+    } else {
+setUserSuccess('Complete')
+}
+}
     useEffect(() => {
         userDB && userDB.users[user.uid] && userDB.users[user.uid].rol !== 'Admin' && router.push('/Formularios')
     }, [userDB, success])
