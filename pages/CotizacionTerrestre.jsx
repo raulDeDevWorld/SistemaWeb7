@@ -158,7 +158,7 @@ function handlerFilterButton (e) {
          setAutocomplete(true)
 console.log(f)
 }
-
+console.log(pdfData)
     return (
         <Layout>
             {userDB && <div className={style.container}>
@@ -346,7 +346,7 @@ console.log(f)
                             return (
 
                                 <div className={`${style.inputs}`} key={index}>
-                                    <input type="text" placeholder="DETALLE" />
+                                    <input type="text" name={`DETALLEFLETE${index}`} onChange={handleEventChange} placeholder="DETALLE" />
                                     <input type="number" name={`FLETEUNITARIO${index}`} onChange={(e) => handlerCalc(e, index)} defaultValue={calc[`FLETEUNITARIO${index}`] && calc[`FLETEUNITARIO${index}`]} placeholder="FLETE UNITARIO" />
                                     <input type="number" id='input' name={`CANTIDADFLETE${index}`} onChange={(e) => handlerCalc(e, index)} defaultValue={calc[`CANTIDADFLETE${index}`] && calc[`CANTIDADFLETE${index}`]} placeholder="CANTIDAD" />
                                     <input type="number" defaultValue={calc[`PRODUCTFLETE${index}`] && calc[`PRODUCTFLETE${index}`]} placeholder="FLETE TOTAL" />
@@ -374,7 +374,7 @@ console.log(f)
                         otrosGastos.map((i, index) => {
                             return (
                                 <div className={`${style.inputs}`} key={index}>
-                                    <input type="text" placeholder="DETALLE" />
+                                    <input type="texto" name={`DETALLE${index}`} onChange={handleEventChange} placeholder="DETALLE" />
                                     <input type="number" name={`COSTOUNITARIO${index}`} onChange={(e) => handlerCalc(e, index)} defaultValue={calc[`COSTOUNITARIO${index}`] && calc[`COSTOUNITARIO${index}`]} placeholder="COSTO UNITARIO" />
                                     <input type="number" name={`CANTIDAD${index}`} onChange={(e) => handlerCalc(e, index)} defaultValue={calc[`CANTIDAD${index}`] && calc[`CANTIDAD${index}`]} placeholder="CANTIDAD" />
                                     <input type="number" defaultValue={calc[`PRODUCT${index}`] && calc[`PRODUCT${index}`]} placeholder="COSTO TOTAL" />
