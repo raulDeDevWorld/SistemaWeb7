@@ -304,6 +304,7 @@ useEffect(() => {
 
                 </Page>
             </Document>}
+</PDFDownloadLink>}
         </div>
     )
 }
