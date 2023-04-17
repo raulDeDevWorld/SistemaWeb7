@@ -1,6 +1,6 @@
 import { Document, Page, View, Text, Image, PDFViewer, StyleSheet, Font } from "@react-pdf/renderer";
 import { useUser } from "../context/Context.js"
-
+import { useState, useRef, useEffect } from 'react'
 Font.register( {family: "Inter", src: "/assets/font.otf"})
 
 const styles = StyleSheet.create({
@@ -98,11 +98,18 @@ const styles = StyleSheet.create({
 const PDFView = () => {
     const { pdfData } = useUser()
 
-    
+    const [isCliente, setisCliente] = useState(false);
     console.log(pdfData)
 
+
+useEffect(() => {
+        setisCliente(true)
+    }, []);
+
+
     return (
-        <PDFViewer>
+        <div>
+{isCliente && <PDFDownloadLink document={
             <Document>
                 <Page style={styles.body} >
                         <Text style={styles.subtitle}>COTIZACIÓN TRANSPORTE </Text>
@@ -296,8 +303,8 @@ const PDFView = () => {
                     }
 
                 </Page>
-            </Document>
-        </PDFViewer>
+            </Document>}
+        </div>
     )
 }
 
