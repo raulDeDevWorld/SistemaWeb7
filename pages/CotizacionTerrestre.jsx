@@ -147,7 +147,7 @@ function handlerFilterButton (e) {
          let f = userDB.users[filter] ? userDB.users[filter] : obj
 
          setItemSelect(f)
-   setUserPdfData({...pdfData, ...f})}
+   setUserPdfData({...pdfData, ...f})
 
          setAutocomplete(true)
 }
