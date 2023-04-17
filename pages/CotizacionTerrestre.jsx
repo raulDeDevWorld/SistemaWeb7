@@ -63,24 +63,28 @@ function CotizacionTerrestre() {
         if (e.target.name == `CANTIDADFLETE${index}` && calc[`FLETEUNITARIO${index}`] !== undefined) {
             let object = reducer(e, index, 'FLETEUNITARIO', 'PRODUCTFLETE', 'FLETETOTAL')
             setCalc({ ...calc, ...object })
+setUserPdfData({...pdfData, ...calc, ...object})
             return
         }
 
         if (e.target.name == `FLETEUNITARIO${index}` && calc[`CANTIDADFLETE${index}`] !== undefined) {
             let object = reducer(e, index, 'CANTIDADFLETE', 'PRODUCTFLETE', 'FLETETOTAL')
             setCalc({ ...calc, ...object })
+setUserPdfData({...pdfData, ...calc, ...object})
             return
         }
 
         if (e.target.name == `CANTIDAD${index}` && calc[`COSTOUNITARIO${index}`] !== undefined) {
             let object = reducer(e, index, 'COSTOUNITARIO', 'PRODUCT', 'TOTAL')
             setCalc({ ...calc, ...object })
+setUserPdfData({...pdfData, ...calc, ...object})
             return
         }
 
         if (e.target.name == `COSTOUNITARIO${index}` && calc[`CANTIDAD${index}`] !== undefined) {
             let object = reducer(e, index, 'CANTIDAD', 'PRODUCT', 'TOTAL')
             setCalc({ ...calc, ...object })
+setUserPdfData({...pdfData, ...calc, ...object})
             return
         }
 
@@ -89,6 +93,7 @@ function CotizacionTerrestre() {
 
         }
         setCalc({ ...calc, ...object })
+setUserPdfData({...pdfData, ...calc, ...object})
     }
 
 
