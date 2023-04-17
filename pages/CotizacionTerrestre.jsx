@@ -29,7 +29,7 @@ function CotizacionTerrestre() {
     const [calc, setCalc] = useState({})
 
     function handleEventChange(e) {
-        setUserPdfData({...itemSelect, ...pdfData, ...{ [`CT-${e.target.name}`]: e.target.value } })
+        setUserPdfData({...pdfData, ...{ [`CT-${e.target.name}`]: e.target.value } })
     }
     function handlerCounter(word) {
         const newTarifa = tarifa.map(i => i)
@@ -147,6 +147,7 @@ function handlerFilterButton (e) {
          let f = userDB.users[filter] ? userDB.users[filter] : obj
 
          setItemSelect(f)
+   setUserPdfData({...pdfData, ...f})}
 
          setAutocomplete(true)
 }
