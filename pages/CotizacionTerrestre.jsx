@@ -138,6 +138,7 @@ function handleFilterChange (e) {
 }
 
 function handlerFilterButton (e) {
+
        e.preventDefault()
         let obj = {
             nombre: '',
@@ -155,9 +156,9 @@ function handlerFilterButton (e) {
    setUserPdfData({...pdfData, ...f})
 
          setAutocomplete(true)
+console.log(f)
 }
 
-console.log(pdfData)
     return (
         <Layout>
             {userDB && <div className={style.container}>
