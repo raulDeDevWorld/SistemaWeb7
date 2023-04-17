@@ -49,7 +49,7 @@ const [excluye, setExcluye] = useState([""])
     }
 
     function handlerPdfButton() {
-setUserPdfData(...pdfFata, tarifa, otros gastos, incluye, excluye)
+setUserPdfData(...pdfData, tarifa, otrosGastos, incluye, excluye)
         let object = {
             CotizacionTerrestre: userDB.CotizacionTerrestre ? userDB.CotizacionTerrestre + 1 : 1
         }
@@ -408,6 +408,19 @@ console.log(pdfData)
                         })
                     }
                     <br />
+
+                    <div className={style.subtitle}>EXCLUYE <span className={style.counterPluss} onClick={() => handlerCounterFour('pluss')}>+</span> <span className={style.counterLess} onClick={() => handlerCounterFour('less')}>-</span></div>
+
+                    {
+                        excluye.map((i, index) => {
+                            return (
+
+                                <div className={style.inputsAll} key={index}>
+                                    <input type="text" />
+                                </div>
+                            )
+                        })
+                    }
                 </form>
             </div>}
             <button className={style.downloadPDF} onClick={handlerPdfButton}>
