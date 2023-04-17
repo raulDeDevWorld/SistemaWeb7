@@ -426,7 +426,7 @@ console.log(pdfData)
                     }
                 </form>
             </div>}
-<InvoicePDF>
+<InvoicePDF >
             <button className={style.downloadPDF} onClick={handlerPdfButton}>
                 <Image src="/download-pdf.svg" width="50" height="50" alt="User" />
             </button>
