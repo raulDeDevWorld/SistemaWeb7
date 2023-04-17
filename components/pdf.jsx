@@ -227,12 +227,27 @@ const PDFView = () => {
                             <Text style={styles.key}>CANTIDAD</Text>
                             <Text style={styles.key}>FLETE TOTAL</Text>
                     </View>
-                    <View style={styles.viewKeyValueTwo}>
+
+
+
+
+{
+                        pdfData.tarifa.map((i, index) => {
+                            return (
+
+                            <View style={styles.viewKeyValueTwo}>
                             <Text style={styles.value}>*MONEDA</Text>
                             <Text style={styles.value}>*MONEDA</Text>
                             <Text style={styles.value}>*MONEDA</Text>
                             <Text style={styles.value}>*MONEDA</Text>
                     </View>
+
+             
+                            )
+                        })
+                    }
+
+                    
                     <Text style={styles.subtitle}>OTROS GASTOS</Text>
                     <View style={styles.viewKeyValueTwo}>
                             <Text style={styles.key}>DETALLE</Text>
@@ -240,13 +255,39 @@ const PDFView = () => {
                             <Text style={styles.key}>CANTIDAD</Text>
                             <Text style={styles.key}>COSTO TOTAL</Text>
                     </View>
-                    <View style={styles.viewKeyValueTwo}>
+                    
+
+
+              {
+                        pdfData.otrosGastos.map((i, index) => {
+                            return (
+
+                            <View style={styles.viewKeyValueTwo}>
                             <Text style={styles.value}>*MONEDA</Text>
                             <Text style={styles.value}>*MONEDA</Text>
                             <Text style={styles.value}>*MONEDA</Text>
                             <Text style={styles.value}>*MONEDA</Text>
                     </View>
-                    
+
+             
+                            )
+                        })
+                    }
+
+
+
+
+                    <Text style={styles.subtitle}>EXCLUYE</Text>
+                    {
+                        pdfData.excluye.map((i, index) => {
+                            return (
+
+                                <View key={index}>
+                                    <Text></Text>
+                                </View>
+                            )
+                        })
+                    }
 
                 </Page>
             </Document>
