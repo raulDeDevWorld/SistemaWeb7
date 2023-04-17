@@ -49,7 +49,7 @@ const [excluye, setExcluye] = useState([""])
     }
 
     function handlerPdfButton() {
-setUserPdfData(...pdfData, tarifa, otrosGastos, incluye, excluye)
+setUserPdfData({...pdfData, tarifa, otrosGastos, incluye, excluye})
         let object = {
             CotizacionTerrestre: userDB.CotizacionTerrestre ? userDB.CotizacionTerrestre + 1 : 1
         }
