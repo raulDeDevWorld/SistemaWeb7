@@ -29,7 +29,7 @@ function CotizacionTerrestre() {
     const [calc, setCalc] = useState({})
 
     function handleEventChange(e) {
-        setUserPdfData({ ...pdfData, ...itemSelect, ...{ [`CT-${e.target.name}`]: e.target.value } })
+        setUserPdfData({...itemSelect, ...pdfData, ...{ [`CT-${e.target.name}`]: e.target.value } })
     }
     function handlerCounter(word) {
         const newTarifa = tarifa.map(i => i)
