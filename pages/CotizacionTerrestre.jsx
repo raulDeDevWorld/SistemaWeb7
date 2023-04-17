@@ -22,6 +22,7 @@ function CotizacionTerrestre() {
     const [tarifa, setTarifa] = useState([""])
     const [otrosGastos, setOtrosGastos] = useState([""])
     const [incluye, setIncluye] = useState([""])
+const [excluye, setExcluye] = useState([""])
     const [filter, setFilter] = useState("")
     const [autocomplete, setAutocomplete] = useState(false)
     const [itemSelect, setItemSelect] = useState({})
@@ -48,6 +49,7 @@ function CotizacionTerrestre() {
     }
 
     function handlerPdfButton() {
+setUserPdfData(...pdfFata, tarifa, otros gastos, incluye, excluye)
         let object = {
             CotizacionTerrestre: userDB.CotizacionTerrestre ? userDB.CotizacionTerrestre + 1 : 1
         }
