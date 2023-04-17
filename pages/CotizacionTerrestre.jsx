@@ -190,24 +190,24 @@ console.log(itemSelect)
                         </div>
                         <div>
                             <label htmlFor="">CORREO</label>
-                            <input type="text" name={"CORREO"} onChange={handleEventChange} />
+                            <input type="text" name={"CORREO"} onChange={handleEventChange} defaultValue={itemSelect['correo'] ? itemSelect['correo']:''}  />
                         </div>
                         <div>
                             <label htmlFor="">EMPRESA</label>
-                            <input type="text" name={"EMPRESA"} onChange={handleEventChange} />
+                            <input type="text" name={"EMPRESA"} onChange={handleEventChange} defaultValue={itemSelect['empresa'] ? itemSelect['empresa']:''}  />
                         </div>
                         <div>
                             <label htmlFor="">TELEFONO</label>
-                            <input type="text" name={"TELEFONO"} onChange={handleEventChange} />
+                            <input type="text" name={"TELEFONO"} onChange={handleEventChange} defaultValue={itemSelect['telefono'] ? itemSelect['telefono']:''} />
                         </div>
                         <div>
                             <label htmlFor="">CARGO</label>
-                            <input type="text" name={"CARGO"} onChange={handleEventChange} />
+                            <input type="text" name={"CARGO"} onChange={handleEventChange} defaultValue={itemSelect['cargo'] ? itemSelect['cargo']:''}  />
                         </div>
 
                         <div>
                             <label htmlFor="">CIUDAD</label>
-                            <input type="text" name={"CIUDAD"} onChange={handleEventChange} />
+                            <input type="text" name={"CIUDAD"} onChange={handleEventChange} defaultValue={itemSelect['ciudad'] ? itemSelect['ciudad']:''} />
                         </div>
                     </div>
                     <br />
