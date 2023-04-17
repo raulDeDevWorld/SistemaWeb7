@@ -10,7 +10,7 @@ import {getDayMonthYear} from "../utils/Fecha";
 
 import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 
-
+import dynamic from "next/dynamic";
 import style from '../styles/CotizacionTerrestre.module.css'
 import Button from '../components/Button'
 
