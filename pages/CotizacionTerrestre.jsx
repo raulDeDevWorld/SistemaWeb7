@@ -57,7 +57,7 @@ setUserPdfData({...pdfData, tarifa, otrosGastos, incluye, excluye})
             CotizacionTerrestre: userDB.CotizacionTerrestre ? userDB.CotizacionTerrestre + 1 : 1
         }
         writeUserData('/', object, setUserSuccess)
-        router.push("/PdfView")
+        
     }
 
 
