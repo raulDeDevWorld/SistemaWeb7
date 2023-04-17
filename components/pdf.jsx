@@ -304,6 +304,7 @@ useEffect(() => {
 
                 </Page>
             </Document>}
+fileName='Cotizacion Terrestre'>
 </PDFDownloadLink>}
         </div>
     )
