@@ -236,10 +236,10 @@ const PDFView = () => {
                             return (
 
                             <View style={styles.viewKeyValueTwo} key={index}>
-                            <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData[`DETALLEFLETE${index}`] && pdfData[`DETALLEFLETE${index}`]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData[`FLETEUNITARIO${index}`] && pdfData[`FLETEUNITARIO${index}`]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData[`CANTIDADFLETE${index}`] && pdfData[`CANTIDADFLETE${index}`]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData[`PRODUCTFLETE${index}`] && pdfData[`PRODUCTFLETE${index}`]}</Text>
                     </View>
 
              
@@ -263,10 +263,16 @@ const PDFView = () => {
                             return (
 
                             <View style={styles.viewKeyValueTwo} key={index}>
-                            <Text style={styles.value}>*MONEDA</Text>
-                            <Text style={styles.value}>*MONEDA</Text>
-                            <Text style={styles.value}>*MONEDA</Text>
-                            <Text style={styles.value}>*MONEDA</Text>
+                            
+
+<Text style={styles.value}>{pdfData && pdfData[`DETALLE${index}`] && pdfData[`DETALLE${index}`]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData[`FLETEUNITARIO${index}`] && pdfData[`FLETEUNITARIO${index}`]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData[`CANTIDADFLETE${index}`] && pdfData[`CANTIDADFLETE${index}`]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData[`PRODUCTFLETE${index}`] && pdfData[`PRODUCTFLETE${index}`]}</Text>
+
+
+
+
                     </View>
 
              
