@@ -14,6 +14,9 @@ import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 import style from '../styles/CotizacionTerrestre.module.css'
 import Button from '../components/Button'
 
+const InvoicePDF = dynamic(() => import("../components/pdf"), {
+  ssr: false,
+});
 
 function CotizacionTerrestre() {
     const { userDB, pdfData, setUserPdfData, setUserSuccess } = useUser()
@@ -423,9 +426,11 @@ console.log(pdfData)
                     }
                 </form>
             </div>}
+<InvoicePDF>
             <button className={style.downloadPDF} onClick={handlerPdfButton}>
                 <Image src="/download-pdf.svg" width="50" height="50" alt="User" />
             </button>
+</InvoicePDF>
             <br />
             <br />
         </Layout>
