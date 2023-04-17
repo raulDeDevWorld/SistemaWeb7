@@ -131,27 +131,27 @@ const PDFView = () => {
                     <View style={styles.items}>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>NOMBRE</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["NOMBRE"] && pdfData["NOMBRE"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-NOMBRE"] && pdfData["CT-NOMBRE"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>CORREO</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["CORREO"] && pdfData["CORREO"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-CORREO"] && pdfData["CT-CORREO"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>EMPRESA</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["EMPRESA"] && pdfData["EMPRESA"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-EMPRESA"] && pdfData["CT-EMPRESA"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>TELEFONO</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["TELEFONO"] && pdfData["TELEFONO"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-TELEFONO"] && pdfData["CT-TELEFONO"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>CARGO</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["CARGO"] && pdfData["CARGO"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-CARGO"] && pdfData["CT-CARGO"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>CIUDAD</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["CIUDAD"] && pdfData["CIUDAD"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-CIUDAD"] && pdfData["CT-CIUDAD"]}</Text>
                         </View>
                     </View>
 
@@ -159,35 +159,35 @@ const PDFView = () => {
                     <View style={styles.items}>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>MERCANCIA</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["MERCANCIA"] && pdfData["MERCANCIA"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-MERCANCIA"] && pdfData["CT-MERCANCIA"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*TIPO DE CARGA</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["TIPO DE CARGA"] && pdfData["TIPO DE CARGA"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-TIPO DE CARGA"] && pdfData["CT-TIPO DE CARGA"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>EMPAQUE</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["EMPAQUE"] && pdfData["EMPAQUE"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-EMPAQUE"] && pdfData["CT-EMPAQUE"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*VOLUMEN M3</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["VOLUMEN M3"] && pdfData["VOLUMEN M3"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-VOLUMEN M3"] && pdfData["CT-VOLUMEN M3"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*PESO TN</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["PESO TN"] && pdfData["PESO TN"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-PESO TN"] && pdfData["CT-PESO TN"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*CANTIDAD</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["CANTIDAD"] && pdfData["CANTIDAD"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-CANTIDAD"] && pdfData["CT-CANTIDAD"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>INCOTERM</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["INCOTERM"] && pdfData["INCOTERM"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-INCOTERM"] && pdfData["CT-INCOTERM"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>MODALIDAD</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["MODALIDAD"] && pdfData["MODALIDAD"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-MODALIDAD"] && pdfData["CT-MODALIDAD"]}</Text>
                         </View>
                     </View>
 
@@ -195,28 +195,28 @@ const PDFView = () => {
                     <View style={styles.items}>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*SERVICIO</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["SERVICIO"] && pdfData["SERVICIO"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-SERVICIO"] && pdfData["CT-SERVICIO"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*TIPO DE UNIDAD</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["TIPO DE UNIDAD"] && pdfData["TIPO DE UNIDAD"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-TIPO DE UNIDAD"] && pdfData["CT-TIPO DE UNIDAD"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*ORIGEN</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["ORIGEN"] && pdfData["ORIGEN"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-ORIGEN"] && pdfData["CT-ORIGEN"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*DESTINO</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["DESTINO"] && pdfData["DESTINO"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-DESTINO"] && pdfData["CT-DESTINO"]}</Text>
                         </View>
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*CANTIDAD</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["CANTIDAD"] && pdfData["CANTIDAD"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-CANTIDAD"] && pdfData["CT-CANTIDAD"]}</Text>
                         </View>
 
                         <View style={styles.viewKeyValue}>
                             <Text style={styles.key}>*MONEDA</Text>
-                            <Text style={styles.value}>{pdfData && pdfData["MONEDA"] && pdfData["MONEDA"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
                         </View>
                     </View>
 
@@ -236,10 +236,10 @@ const PDFView = () => {
                             return (
 
                             <View style={styles.viewKeyValueTwo} key={index}>
-                            <Text style={styles.value}>*MONEDA</Text>
-                            <Text style={styles.value}>*MONEDA</Text>
-                            <Text style={styles.value}>*MONEDA</Text>
-                            <Text style={styles.value}>*MONEDA</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
+                            <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
                     </View>
 
              
