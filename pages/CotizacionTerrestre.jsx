@@ -173,7 +173,7 @@ console.log(pdfData)
 <div className={style.containerFilter}>
 
 <input  className={style.inputFilter} type="text" onChange={handleFilterChange} />
-<button className={style.buttonFilter} onClick={handlerFilterButton}>Completar</button>
+<Button style={'buttonSecondary'} click={handlerFilterButton}>Completar</Button>
 
 </div>
 
