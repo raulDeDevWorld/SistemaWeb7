@@ -237,9 +237,7 @@ cursor: pointer;
     color: white;
   }
 @media (max-width: 750px) {
-    .form {
-        background-color: transparent;
-    }
+    
     .subtitle {
         min-height: 30px;
         display: flex;
