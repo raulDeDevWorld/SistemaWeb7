@@ -15,8 +15,9 @@
 }
 
 .containerFilter {
+    width: 100%;
     display: flex;
-    justifyContent: Center;
+    justify-content: space-around;
 }
 
 
