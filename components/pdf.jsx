@@ -1,6 +1,7 @@
 import { PDFDownloadLink, Document, Page, View, Text, Image, PDFViewer, StyleSheet, Font } from "@react-pdf/renderer";
 import { useUser } from "../context/Context.js"
 import { useState, useRef, useEffect } from 'react'
+import Button from './Button'
 Font.register( {family: "Inter", src: "/assets/font.otf"})
 
 const styles = StyleSheet.create({
