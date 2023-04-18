@@ -311,7 +311,7 @@ useEffect(() => {
                 </Page>
             </Document>}
 fileName='Cotizacion Terrestre'>
-<button>pdf</button>
+<Button style={'buttonPrimary'} click={}>pdf</Button>
 </PDFDownloadLink>}
         </div>
     )
