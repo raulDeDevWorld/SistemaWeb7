@@ -19,6 +19,14 @@
     justifyContent: Center;
 }
 
+
+.containerFilter :nth-child(1) {
+    background-color: transparent:
+    border-radious: 15px;
+    margin: 5px;
+}
+
+
 .containerFilter :nth-child(n) {
     margin: 5px;
 }
