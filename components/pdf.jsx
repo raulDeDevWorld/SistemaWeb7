@@ -314,7 +314,7 @@ fileName='Cotizacion Terrestre'>
 
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
-<Button style={'buttonPrimary'}>pdf</Button>
+<Button style={'buttonSecondary'}>pdf</Button>
 </div>
 
 </PDFDownloadLink>}
