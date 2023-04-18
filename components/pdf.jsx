@@ -95,6 +95,11 @@ const styles = StyleSheet.create({
 
 })
 
+
+
+
+
+
 const PDFView = () => {
     const { pdfData } = useUser()
 
@@ -305,6 +310,7 @@ useEffect(() => {
                 </Page>
             </Document>}
 fileName='Cotizacion Terrestre'>
+<button>pdf</button>
 </PDFDownloadLink>}
         </div>
     )
