@@ -313,7 +313,7 @@ useEffect(() => {
 fileName='Cotizacion Terrestre'>
 
 
-<div className={{display: 'flex', justifyContent: 'center'}}>
+<div style={{display: 'flex', justifyContent: 'center'}}>
 <Button style={'buttonPrimary'}>pdf</Button>
 </div>
 
