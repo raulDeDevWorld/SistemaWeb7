@@ -172,7 +172,7 @@ console.log(pdfData)
 
 <div className={style.containerFilter}>
 
-<input  className={style.inputFilter} type="text" onChange={handleFilterChange} />
+<input  className={style.inputFilter} type="text" onChange={handleFilterChange} placeholder='Autocompletar por CI' />
 <Button style={'buttonSecondary'} click={handlerFilterButton}>Completar</Button>
 
 </div>
