@@ -14,6 +14,17 @@
     padding: 25px;
 }
 
+.containerFilter {
+    display: flex;
+    justifyContent: Center;
+}
+
+.containerFilter :nth-child(n) {
+    margin: 5px;
+}
+
+
+
 .flex span {
     width: 100%;
     text-align: center;
