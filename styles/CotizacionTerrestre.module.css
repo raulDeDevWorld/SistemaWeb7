@@ -24,15 +24,27 @@
    
     margin: 5px;
 cursor: pointer;
-  font-size: 12px;
+  
   text-align: center;
-  width: 180px;
-  padding: 10px 1px;
-  border-radius: 5px;
+
+  
+ 
 
   background-color: transparent;
 
-  transition-duration: .5s;
+
+
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    width: 90%;
+    min-width: 140px;
+    max-width: 250px;
+    padding: 8px 1px; 
+    border-radius: 20px;        
+    color: white;
+ 
 
 }
 
