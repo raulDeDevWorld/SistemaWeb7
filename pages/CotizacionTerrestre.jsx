@@ -169,8 +169,14 @@ console.log(pdfData)
             {userDB && <div className={style.container}>
                 <form className={style.form}>
 
+
+<div className={style.containerFilter}>
+
 <input  className={style.inputFilter} type="text" onChange={handleFilterChange} />
 <button className={style.buttonFilter} onClick={handlerFilterButton}>Completar</button>
+
+</div>
+
 
                     <div className={style.subtitle}>COTIZACIÓN TRANSPORTE TERRESTRE</div>
                     <div className={style.containerFirstItems}>
